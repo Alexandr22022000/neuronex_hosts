@@ -1,0 +1,1 @@
+{"structure":{"hosts":{"uid":{"type":"BIGSERIAL","isKey":true},"parent":{"type":"BIGINT","isKey":false},"domain":{"type":"TEXT","isKey":false},"url":{"type":"TEXT","isKey":false}}},"data":{"hosts":[]}}
