@@ -21,10 +21,6 @@ module.exports = (domains) => {
                 parent = +store.hosts[key].uid;
             }
         }
-
-        if (url !== null) continue;
-
-        return null;
     }
 
     return url;
