@@ -14,14 +14,14 @@ getConfig();
 app.use((req, res) => {
     if (req.url === config.UPDATE_URL) {
         getConfig();
-        return res.end("RedStar Systems host: Config updated success!");
+        return res.end("Neuronex host: Config updated success!");
     }
 
     let hosts = getHosts(req);
     let url = searchUrl(hosts);
 
     if (url === null){
-        return res.end("RedStar Systems host: Error: 404, host not found!");
+        return res.end("Neuronex host: Error: 404, host not found!");
     }
 
     proxy.web(req, res, {
