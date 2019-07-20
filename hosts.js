@@ -29,4 +29,4 @@ app.use((req, res) => {
     });
 });
 
-app.listen(80, () => console.log("Host is started on port 80"));
+app.listen(config.PORT || 80, () => console.log("Host is started on port " + (config.PORT || 80)));
